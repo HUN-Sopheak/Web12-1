@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+.container nav {
+  width: 100%;
+  background-color: red;
+}
+.container nav ul {
+  list-style: none;
+  text-align: center;
+}
+.container nav ul li {
+  display: inline-block;
+}
+.container nav ul li ul {
+  display: none;
+}
+.container nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  padding: 15px;
+  display: block;
+}
+.container nav ul li a:hover {
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

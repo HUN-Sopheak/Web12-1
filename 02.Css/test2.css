@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+.container{
+    width: 50%;
+    height: auto;
+    /* background-color: black; */
+    margin: auto;
+    padding: 10px;
+}
+h1{
+    margin: 0;
+    padding-left: 10px;
+}
+.box:nth-child(1){
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.box:nth-child(1) h1{
+    font-size: 70px;
+}
+/* nothing child */
+.box:nth-child(2){
+    width: 100%;
+    height: 300px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+.sub-box{
+    width: 32.9%;
+    height: 100%;
+    /* background-color: greenyellow; */
+}
+.sub-box p{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Kolker Brush', cursive;
+}
+.box:nth-child(3){
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    background-color: black;
+}
+.box:nth-child(3) h1{
+    font-size: 50px;
+}

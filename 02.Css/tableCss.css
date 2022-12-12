@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table{
+    margin: auto;
+    margin-top: 10px;
+    width: 500px;
+    border-collapse: collapse;
+}
+.table th{
+    background-color: red;
+    color: white;
+}
+.table th:nth-child(1){
+    background-color: green;
+}
+tr:nth-child(even){
+    background-color: brown;
+}
+tr:nth-child(odd){
+    background-color: blue;
+}

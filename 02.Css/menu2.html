@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 300px;
+        margin: auto;
+    }
+    .menu{
+        width: 100%;
+        background-color: crimson;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .menu ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 20px;
+        display: block;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .menu ul li:hover{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+            </ul>
+        </div>
+        <div class="b">
+            Click me
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

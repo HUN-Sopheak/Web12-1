@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 10px auto;
+    height: auto;
+    background-color: cyan;
+    padding: 30px;  
+}
+.form {
+    width: 100%;
+    height: 20cm;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+.form .pic{
+    width: 50%;
+    height: 100%;
+    background-image: url("/img/prettyflowers31.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+.sub-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    width: 88%;
+    height: 90%;
+    /* background-color: blue; */
+}
+.sub-form h1{
+    font-size: 35pt;
+}
+.form-layout{
+    width: 100%;
+    height: 100%;
+}
+.layout{
+    width: 50%;
+    /* background-color: red; */
+    float: left;
+}
+/* .layout:last-child{
+} */
+label{
+    line-height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+input{
+    width: 70%;
+    height: 45px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+input:focus{
+    outline: none;
+}
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-left: -100px;
+    height: 25px;
+}

@@ -1,0 +1,35 @@
+.box1{
+    width: 35%;
+    height: 700px;
+    /* background-color: brown; */
+    margin: 20px auto;
+    box-shadow: -10px -10px 5px gray;
+    padding: 25px;
+}
+.box1 .title{
+    color: orange;
+    padding-left: 10px;
+    margin: 0;
+    text-shadow: 6px 6px 5px gold;
+}
+.box1 .img-box{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+    /* background-color: cornflowerblue; */
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+.txt-box{
+    width: 98.5%;
+    height: 21%;
+    /* background-color: cornflowerblue; */
+    border: 5px solid red;
+}
+.txt-box p{
+    padding: 4px 10px;
+    font-size: 20px;
+    margin: 0;
+}

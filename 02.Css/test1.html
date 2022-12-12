@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main-box{
+        width: 800px;
+        height: 450px;
+        background-color: brown;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main-box .box-1{
+        width: 100%;
+        height: 33.33%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .box-1 h1{
+        text-align: center;
+        font-size: 50px;
+        transition: all 0.5s;
+    }
+    .box-1:hover h1{
+        transform: scale(1.3);
+        color: dodgerblue;
+    }
+    .main-box .box-2{
+        width: 100%;
+        height: 33.33%;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-2 h1{
+        font-size: 50px;
+    }
+    .main-box .box-3{
+        width: 100%;
+        height: 33.33%;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+    }
+    .box-3 h1{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <div class="main-box">
+        <div class="box-1">
+            <h1>Welcome to Etec Center </h1>
+        </div>
+        <div class="box-2">
+            <h1>Body</h1>
+        </div>
+        <div class="box-3">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

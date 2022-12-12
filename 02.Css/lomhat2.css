@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+.container{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    /* background-color: blue; */
+    padding: 10px;
+}
+.container .box1{
+    width: 100%;
+    height: 150px;
+    /* background-color: brown; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-image: url('https://imgs.search.brave.com/SzDaDC_UTchHFbemR2GXoFwpBbfxQkzOghJqATvbaLk/rs:fit:1200:445:1/g:ce/aHR0cHM6Ly9zbWFy/dC5jb20ucGgvUHJl/cGFpZC9pbWFnZXMv/ZGVmYXVsdC1zb3Vy/Y2UvZGVmYXVsdC1h/bGJ1bS9zb3MtcGFn/ZS1iYW5uZXItMTky/MC14LS00NDVweC5q/cGc_c2Z2cnNuPTA');
+    margin-bottom: 10px;
+}
+
+.container .box2{
+    width: 100%;
+    height: 300px;
+    /* background-color: cadetblue; */
+    display: flex;
+    margin-bottom: 1%;
+}
+.box2 .sub-box:first-child{
+    width: 20%;
+    height: 100%;
+    background-color: pink;
+    background-image: url('https://imgs.search.brave.com/APFovZfs5obauZdnYAHLPi5Trn6PzxMZJIQcQ7jd1zs/rs:fit:1080:1080:1/g:ce/aHR0cHM6Ly93d3cu/Y2VsbGNhcmQuY29t/LmtoL2MvdXBsb2Fk/cy8yMDIwLzExL1Zh/bm5kYXMtQkFfQW5u/b3VuY2VtZW50X1Yy/LTItMTA4MHgxMDgw/LmpwZw');
+    background-position: center;
+    background-size: cover;
+    margin-right: 1%;
+}
+
+.sub-box:nth-child(2){
+    width: 60%;
+    height: 100%;
+    /* background-color: black; */
+}
+.sub-box:nth-child(2) .heading{
+    width: 100%;
+    height: 20%;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid red;
+}
+.heading h4{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Bokor', cursive;
+}
+.sub-box:nth-child(2) .main{
+    width: 100%;
+    height: 40%;
+    /* background-color: blueviolet; */
+}
+.main p{
+    margin: 0;
+    text-align: justify;
+}
+.sub-box:nth-child(2) .footer{
+    width: 100%;
+    height: 40%;
+    background-image: url(https://cdn.sabay.com/cdn/media.sabay.com/media/Sothearith/room49/6361ed0da0656_1667362020_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.box2 .sub-box:last-child{
+    width: 20%;
+    height: 100%;
+    background-image: url('https://imgs.search.brave.com/cY7WXaK-6O-0WYqmerkI6cV3cvJO0LUnIu6T2BWwar8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zOS5r/aDEuY28vZjAvZjBm/MjFmYzY5ODliNWVh/N2I4YWFiODBiOTg3/MDA2ZTUwZDJiYTFh/ZS5qcGc');
+    background-position: center;
+    background-size: cover;
+    margin-left: 1%;
+}
+.container .box3{
+    width: 100%;
+    height: 150px;
+    background-image: url('https://imgs.search.brave.com/BBifXWtQ_adOlv6n06wByEcYvgjMBj0ZmFraU-GS6hU/rs:fit:800:250:1/g:ce/aHR0cHM6Ly9tLmJs/b2cuaHUvaW4vaW5z/dXJhbmNlMjAvaW1h/Z2UvdGVzbGFfYmFu/bmVyLmpwZw');
+    background-position: center;
+    background-size: cover;
+}

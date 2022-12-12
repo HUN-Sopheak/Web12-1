@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(233, 231, 231, 0.514);
+}
+.container{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 5px solid red;
+    padding: 5px;
+}
+.header{
+    width: 100%;
+    background-color: black;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.header ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.header ul li:hover a{
+    background-color: rgb(90, 89, 89);
+}
+.ads1-header{
+    width: 100%;
+    height: 100px;
+    background-image: url('https://business-cambodia.com/cms/assets/fab880fe-41ef-479c-a4b8-69fb9579826e');
+    margin-top: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.content{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .box:nth-child(1){
+    width: 20%;
+    height: 100%;
+    background-image: url('http://image.freshnewsasia.com/advertise/banner/gcnjhbce1p.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content .box:nth-child(2){
+    width: 79.5%;
+    height: 100%;
+    /* background-color: orange; */
+}
+.box:nth-child(2) .ads-content{
+    width: 100%;
+    height: 100px;
+    background-image: url('http://image.freshnewsasia.com/advertise/banner/d4jl53h18a.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    color: blue;
+    padding: 10px;
+    text-align: justify;
+    border-bottom: 2px solid black;
+}
+span{
+    color: gray;
+    font-size: 25px;
+}
+article p{
+    font-size: 18px;
+}
+font{
+    color: black;
+    font-weight: bold;
+}
