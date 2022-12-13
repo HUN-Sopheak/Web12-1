@@ -9,6 +9,7 @@ const hide=()=>{
 const show=()=>{
     event1.style.display="block";
 }
+
 i=true;
 const toggle=()=>{
     if(i){
@@ -17,7 +18,6 @@ const toggle=()=>{
     }else{
         event1.style.display="block";
        document.getElementById("tt").innerHTML="hide";
-
     }
     i=!i;
 }
