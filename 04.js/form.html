@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/03.Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+     
+        <label for="" class="form-label">A</label>
+        <input type="text" class="form-control w-50" id="a">
+        <label for="" class="form-label">B</label>
+        <input type="text" class="form-control w-50" id="b">
+        <label for="" class="form-label">Result</label>
+        <input type="text" class="form-control w-50 mb-2" disabled id="result">
+        <button class="btn btn-primary" onclick="sum()">+</button>
+        <button class="btn btn-primary" onclick="dok()">-</button>
+ 
+    </div>
+</body>
+<script>
+    var a = document.getElementById("a");
+    var b = document.getElementById("b");
+   
+    const sum=()=>{
+        var sum=0;
+       sum = parseFloat(a.value) + parseFloat(b.value);
+       document.getElementById("result").value=sum;
+    }
+    const dok=()=>{
+        var min;
+        min = parseFloat(a.value) - parseFloat(b.value);
+       document.getElementById("result").value=min;
+    }
+</script>
+</html>
