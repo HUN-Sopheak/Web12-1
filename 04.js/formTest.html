@@ -12,7 +12,7 @@
         <label for="" class="form-label">ID</label>
         <input type="text" class="form-control" id="id">
         <label for="" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="name1">
         <button class="btn btn-outline-danger mt-2" onclick="add()">Add</button>
         <hr>
         <table class="table ">
@@ -28,12 +28,14 @@
 </body>
 <script>
     var id=document.getElementById("id");
-    var name = document.getElementById("name");
-    var text=" ";
+    var name1 = document.getElementById("name1");
     var tbl =document.getElementById("tbl");
+    var text=" ";
     const add=()=>{
-        var get = "<tr><td>"+parseInt(id.value)+"</td><td>"+name.value+"</td></tr>";
+        var get = "<tr><td>"+parseInt(id.value)+"</td><td>"+name1.value+"</td></tr>";
         tbl.innerHTML=text+=get;
+       id.value=" ";
+       name1.value=" ";
     }
 </script>
 </html>
