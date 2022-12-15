@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
-        <input type="text" placeholder="ID" class="form-control w-50 mb-2">
-        <input type="text" placeholder="Product-Name" class="form-control w-50 mb-2">
-        <input type="text" placeholder="qty" class="form-control w-50 mb-2">
-        <input type="text" placeholder="price" class="form-control w-50 mb-2">
-        <Button class="btn btn-primary">Add</Button>
-        <table class="table">
-            <thead>
+        <label for="" class="form-label">ID</label>
+        <input type="text" class="form-control w-50 mb-2" id="id">
+        <label for="" class="form-label">Product-Name</label>
+        <input type="text" class="form-control w-50 mb-2" id="pro_name">
+        <label for="" class="form-label">Qty</label>
+        <input type="text" class="form-control w-50 mb-2" id="qty">
+        <label for="" class="form-label">Price</label>
+        <input type="text" class="form-control w-50 mb-2" id="price">
+        <Button class="btn btn-primary mb-2" onclick="add()">Add</Button>
+        <table class="table table-striped">
+            <thead class="table-danger">
                 <th>ID</th>
                 <th>Product Name</th>
                 <th>Qty</th>
                 <th>Price</th>
-                <th>Total</th>
+                <th>Total USD</th>
+                <th>Total KHR</th>
             </thead>
-            <tbody id="Result">
-
-            </tbody>
+            <tbody id="Result"></tbody>
         </table>
     </div>
 </body>
 <script>
-    
+    var id = document.getElementById("id");
+    var pro_name = document.getElementById("pro_name");
+    var qty = document.getElementById("qty");
+    var price = document.getElementById("price");
+    var result = document.getElementById("Result");
+    var text = " ";
+    const add = () => {
+        var get_data = "<tr><td>" + id.value + "</td><td>" + pro_name.value + "</td><td>" 
+            + qty.value + "</td><td>"
+            + price.value + "</td><td>" + parseInt(qty.value) * parseFloat(price.value) + "&nbsp;USD</td>"+"<td>"
+            +(parseInt(qty.value) * parseFloat(price.value))*4100+"&nbsp;KHR</td></tr>";
+        result.innerHTML = text = text + get_data;
+        id.value = " ";
+        pro_name.value = " ";
+        qty.value = " ";
+        price.value = " ";
+    }
 </script>
+
 </html>
